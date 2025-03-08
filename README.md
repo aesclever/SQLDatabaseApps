@@ -28,6 +28,8 @@ URL 	varchar(200) 	NO 		NULL
 ```
 ![DBAdmin](media/DB_myAdmin.png)
 
+![Workbench](media/Workbench.png)
+
 
 ## Front end app
 
@@ -35,3 +37,5 @@ Create a C# Windows Form Desktop application using Visual Studio 2022 with .NET 
 1. Create a windows form
 2. Create an Album class
 3. Create an Albun Data Access Object class
+
+![FrontendApp](media/FrontendApp.png)
