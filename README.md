@@ -9,3 +9,8 @@
 2. Install [MAMP](https://www.bing.com/ck/a?!&&p=2d1e0510670580990cb5e56ab2921436f535ea33cb9e6cb20ddc0123556e040aJmltdHM9MTc0MTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=049b1723-791c-604f-01c5-02b4784261c3&psq=mamp+download&u=a1aHR0cHM6Ly93d3cubWFtcC5pbmZvL2VuL2Rvd25sb2Fkcy8&ntb=1)
 
 3. Install [Visual Studio 2022 Community Ed.](https://visualstudio.microsoft.com/vs/community/)
+
+
+![MampWeb](media/MAMPServers.png)
+
+![DBAdmin](media/DB_myAdmin.png)
