@@ -13,4 +13,25 @@
 
 ![MampWeb](media/MAMPServers.png)
 
+**Create a database named `music` with table `albums`**
+
+```mysql
+Field 	Type 	Null 	Key 	Default 	Extra 	
+ID 	int(11) 	NO 	PRI 	NULL 	auto_increment
+ALBUM_TITLE 	varchar(100) 	NO 		NULL 	
+ARTIST 	varchar(100) 	NO 		NULL 	
+YEAR 	year(4) 	NO 		NULL 	
+IMAGE_NAME 	varchar(500) 	NO 		NULL 	
+DESCRIPTION 	text 	NO 		NULL 	
+URL 	varchar(200) 	NO 		NULL 	
+
+```
 ![DBAdmin](media/DB_myAdmin.png)
+
+
+## Front end app
+
+Create a C# Windows Form Desktop application using Visual Studio 2022 with .NET 8.0 framework.
+1. Create a windows form
+2. Create an Album class
+3. Create an Albun Data Access Object class
