@@ -30,6 +30,50 @@ URL 	varchar(200) 	NO 		NULL
 
 ![Workbench](media/Workbench.png)
 
+**Synchronize Tables `albums` and `tracks`**
+```mysql
+-- MySQL Workbench Synchronization
+-- Generated: 2025-03-08 15:48
+-- Model: New Model
+-- Version: 1.0
+-- Project: Name of the project
+-- Author: markn
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+ALTER TABLE `music`.`albums` 
+ADD PRIMARY KEY (`ID`);
+;
+
+CREATE TABLE IF NOT EXISTS `music`.`tracks` (
+  `ID` INT(11) NOT NULL,
+  `track_title` VARCHAR(100) NULL DEFAULT NULL,
+  `number` INT(11) NULL DEFAULT NULL,
+  `video_url` VARCHAR(100) NULL DEFAULT NULL,
+  `lyrics` TEXT(1000) NULL DEFAULT NULL,
+  `albums_ID` INT(11) NOT NULL,
+  PRIMARY KEY (`ID`),
+  INDEX `fk_tracks_albums_idx` (`albums_ID` ASC),
+  CONSTRAINT `fk_tracks_albums`
+    FOREIGN KEY (`albums_ID`)
+    REFERENCES `music`.`albums` (`ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+```
+
+![EERDiagram](media/EERDiagram.png)
+
+---
+
 
 ## Front end app
 
