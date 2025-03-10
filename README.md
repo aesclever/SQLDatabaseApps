@@ -84,4 +84,4 @@ Create a C# Windows Form Desktop application using Visual Studio 2022 with .NET 
 2. Create an Album class
 3. Create an Albun Data Access Object class
 
-![FrontendApp](media/FrontendApp.png)
+![FrontendApp](media/DesktopApp.png)
